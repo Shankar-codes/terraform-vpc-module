@@ -7,7 +7,7 @@ data "aws_availability_zones" "available" {
 }
 
 data "aws_route_table" "main" {
-  vpc_id = aws_vpc.default.id
+  vpc_id = data.aws_vpc.default.id
   filter {
     name   = "association.main"
     values = ["true"]
