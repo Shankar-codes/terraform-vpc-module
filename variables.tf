@@ -12,7 +12,7 @@ variable "environment" {
   type        = string
 }
 
-variable "vpctags" {
+variable "vpc_tags" {
   type        = map
   default     = {}
 }
